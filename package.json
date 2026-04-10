@@ -1,0 +1,11 @@
+{
+  "name": "@ley-labs/platform",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "type": "module"
+}
