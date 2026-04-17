@@ -1,0 +1,12 @@
+$schema: 'https://moonrepo.dev/schemas/template.json'
+
+id: 'client-lib'
+title: 'Client Library Template'
+description: 'A SolidJS client-side library using tsup and Vitest.'
+destination: '/packages/[projectName]-client'
+
+variables:
+  projectName:
+    type: 'string'
+    prompt: 'What is the name of the project?'
+    required: true

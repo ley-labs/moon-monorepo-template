@@ -1,0 +1,8 @@
+project:
+  type: 'library'
+
+tags: ['server']
+
+layer: 'library'
+stack: 'backend'
+language: 'typescript'

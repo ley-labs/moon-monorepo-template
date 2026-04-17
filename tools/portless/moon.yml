@@ -1,0 +1,11 @@
+project:
+  type: 'infrastructure'
+
+tags: ['infra']
+
+tasks:
+  proxy:
+    command: "pnpm portless proxy start --no-tls"
+    options:
+      cache: false
+      runInCI: false

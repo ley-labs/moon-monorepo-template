@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.options.json",
+  "files": [],
+  "references": [
+    {
+      "path": "apps/auth-api"
+    },
+    {
+      "path": "apps/auth-web"
+    },
+    {
+      "path": "e2e/auth-e2e"
+    },
+    {
+      "path": "packages/auth-client"
+    },
+    {
+      "path": "packages/auth-server"
+    },
+    {
+      "path": "packages/auth-shared"
+    }
+  ]
+}

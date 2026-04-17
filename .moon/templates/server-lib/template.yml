@@ -1,0 +1,12 @@
+$schema: 'https://moonrepo.dev/schemas/template.json'
+
+id: 'server-lib'
+title: 'Server Library Template'
+description: 'A server-only library using tsup, Vitest, and Node.js types.'
+destination: '/packages/{{ projectName }}-server'
+
+variables:
+  projectName:
+    type: 'string'
+    prompt: 'What is the base name of the project? (e.g. auth)'
+    required: true

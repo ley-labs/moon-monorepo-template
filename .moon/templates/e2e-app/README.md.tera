@@ -1,0 +1,53 @@
+# @ley-labs/{{ projectName }}-e2e
+
+Comprehensive end-to-end test suite for the `{{ projectName }}` project stack using Playwright.
+
+## Features
+
+- **Playwright**: Cross-browser testing with a unified API.
+- **Unified Testing**: Tests both `{{ projectName }}-web` and `{{ projectName }}-api` together.
+- **Automatic Lifecycle**: Starts development servers automatically during test runs.
+- **Reporting**: Generates rich HTML reports for test failures.
+- **TypeScript**: Shared configuration via project references and node types.
+
+## Getting Started
+
+### Prerequisites
+
+Ensure Playwright browsers are installed:
+
+```bash
+pnpm playwright install
+```
+
+### Running Tests
+
+Execute the full E2E test suite:
+
+```bash
+moon run {{ projectName }}-e2e:e2e
+```
+
+### Debugging
+
+Run tests in Playwright UI mode for interactive debugging:
+
+```bash
+pnpm -C e2e/{{ projectName }}-e2e playwright test --ui
+```
+
+### Linting
+
+Verify code style and formatting:
+
+```bash
+moon run {{ projectName }}-e2e:lint
+```
+
+### Typechecking
+
+Verify type safety for test files and configuration:
+
+```bash
+moon run {{ projectName }}-e2e:typecheck
+```

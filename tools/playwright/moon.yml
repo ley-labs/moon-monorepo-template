@@ -1,0 +1,16 @@
+$schema: "https://moonrepo.dev/schemas/project.json"
+
+project:
+  type: "tool"
+
+tags: ["infra", "playwright"]
+
+tasks:
+  install-browsers:
+    command: "pnpm playwright install --with-deps"
+    options:
+      cache: false
+      runInCI: true
+    inputs:
+      - "/package.json"
+      - "/pnpm-lock.yaml"

@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "tsBuildInfoFile": "../../.moon/cache/types/packages/{{ projectName }}-server/tsconfig.tsbuildinfo",
+    "outDir": "../../.moon/cache/types/packages/{{ projectName }}-server",
+    "rootDir": "src"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "node_modules"]
+}

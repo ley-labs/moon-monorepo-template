@@ -1,0 +1,24 @@
+# @ley-labs/{{ projectName }}-client
+
+A SolidJS client-side library.
+
+## Getting Started
+
+```bash
+pnpm install
+```
+
+## Features
+
+- **SolidJS**: High-performance reactivity.
+- **tsup**: Fast bundling with `tsup-preset-solid`.
+- **Vitest**: Modern testing with JSDOM.
+- **Biome**: Unified linting and formatting.
+- **Moon**: Monorepo task orchestration.
+
+## Scripts
+
+- `moon run {{ projectName }}-client:build`: Build the library.
+- `moon run {{ projectName }}-client:test`: Run tests.
+- `moon run {{ projectName }}-client:lint`: Lint and format.
+- `moon run {{ projectName }}-client:typecheck`: Type check.

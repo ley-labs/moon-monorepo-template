@@ -1,0 +1,12 @@
+$schema: 'https://moonrepo.dev/schemas/template.json'
+
+id: 'api-app'
+title: 'API Application Template'
+description: 'A Cloudflare Workers API application using Hono.'
+destination: '/apps/[projectName]-app'
+
+variables:
+  projectName:
+    type: 'string'
+    prompt: 'What is the name of the project?'
+    required: true

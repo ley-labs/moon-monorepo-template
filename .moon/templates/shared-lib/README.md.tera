@@ -1,0 +1,30 @@
+# @ley-labs/{{ projectName }}-shared
+
+Shared library for client and server.
+
+## Scripts
+
+- `moon run {{ projectName }}-shared:build` - Build for production.
+- `moon run {{ projectName }}-shared:test` - Run tests.
+- `moon run {{ projectName }}-shared:lint` - Check for linting errors.
+- `moon run {{ projectName }}-shared:typecheck` - Run TypeScript type checking.
+
+## Usage
+
+### Install
+
+From the workspace root:
+```bash
+pnpm add @ley-labs/{{ projectName }}-shared --workspace --filter <target-app>
+```
+
+Or, from the target app directory:
+```bash
+pnpm add @ley-labs/{{ projectName }}-shared --workspace
+```
+
+### Import
+
+```typescript
+import { ... } from '@ley-labs/{{ projectName }}-shared';
+```

@@ -1,0 +1,21 @@
+$schema: "https://moonrepo.dev/schemas/tasks.json"
+
+inheritedBy:
+  file: "vite.config.ts"
+
+tasks:
+  build:
+    command: "pnpm vite build"
+    deps:
+      - "~:typecheck"
+      - "~:lint"
+    inputs:
+      - 'src/**/*'
+      - 'vite.config.ts'
+      - 'tsconfig.json'
+      - file: 'index.html'
+        optional: true
+      - file: 'wrangler.json'
+        optional: true
+    outputs:
+      - "dist"

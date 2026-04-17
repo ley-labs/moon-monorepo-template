@@ -1,0 +1,9 @@
+import { render } from '@solidjs/testing-library';
+import { describe, expect, it } from 'vitest';
+
+describe('Index', () => {
+  it('renders correctly', () => {
+    const { getByText } = render(() => <h1>Hello {{ projectName }}-web</h1>);
+    expect(getByText('Hello {{ projectName }}-web')).toBeDefined();
+  });
+});

@@ -1,0 +1,25 @@
+# @ley-labs/{{ projectName }}-server
+
+Server-only library for authentication and authorization.
+
+## Scripts
+
+- `pnpm moon run {{ projectName }}-server:build` - Build for production.
+- `pnpm moon run {{ projectName }}-server:test` - Run tests.
+- `pnpm moon run {{ projectName }}-server:lint` - Check for linting errors.
+- `pnpm moon run {{ projectName }}-server:typecheck` - Run TypeScript type checking.
+
+## Usage
+
+### Install
+
+From the workspace root:
+```bash
+pnpm add @ley-labs/{{ projectName }}-server --workspace --filter <target-app>
+```
+
+### Import
+
+```typescript
+import { serverOnly } from '@ley-labs/{{ projectName }}-server';
+```

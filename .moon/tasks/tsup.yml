@@ -1,0 +1,17 @@
+$schema: "https://moonrepo.dev/schemas/tasks.json"
+
+inheritedBy:
+  file: "tsup.config.ts"
+
+tasks:
+  build:
+    command: "pnpm tsup"
+    deps:
+      - "~:typecheck"
+      - "~:lint"
+    inputs:
+      - "src/**/*"
+      - "tsup.config.ts"
+      - "tsconfig.json"
+    outputs:
+      - "dist"

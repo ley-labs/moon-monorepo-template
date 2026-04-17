@@ -1,0 +1,7 @@
+import { render } from 'solid-js/web';
+
+const root = document.getElementById('root');
+
+if (root instanceof HTMLElement) {
+  render(() => <h1>Hello {{ projectName }}-web</h1>, root);
+}

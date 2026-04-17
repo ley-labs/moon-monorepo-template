@@ -1,0 +1,14 @@
+node:
+  version: "24.14.0"
+pnpm:
+  version: "10.33.0"
+javascript:
+  packageManager: "pnpm"
+  syncProjectWorkspaceDependencies: true
+typescript:
+  projectConfigFileName: "tsconfig.json"
+  rootConfigFileName: "tsconfig.json"
+  rootOptionsConfigFileName: "tsconfig.options.json"
+  syncProjectReferences: true
+  routeOutDirToCache: true
+  pruneProjectReferences: true

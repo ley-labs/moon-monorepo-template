@@ -1,0 +1,8 @@
+project:
+  type: 'library'
+
+tags: ['shared']
+
+layer: 'library'
+stack: 'unknown'
+language: 'typescript'

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "skills": {
+    "better-auth-best-practices": {
+      "source": "better-auth/skills",
+      "sourceType": "github",
+      "computedHash": "a4c830509e85557b59339d8d93a4e243e9e59c686e7678854d39230e12c2a6dc"
+    },
+    "create-auth-skill": {
+      "source": "better-auth/skills",
+      "sourceType": "github",
+      "computedHash": "31c027d02dbf1faa37f58191f574b9443143042fb2b684fe32df53ab0270487c"
+    },
+    "debug-task": {
+      "source": "moonrepo/moon",
+      "sourceType": "github",
+      "computedHash": "7393becbdda183fd0f809222a44e5c3df104b4da23be940c97bc8b75bb57d629"
+    },
+    "formisch": {
+      "source": "open-circle/agent-skills",
+      "sourceType": "github",
+      "computedHash": "3920325909e35e888d752fd756c31e9b26b2fc66ba0bdb456f67ad8101d87485"
+    },
+    "valibot": {
+      "source": "open-circle/agent-skills",
+      "sourceType": "github",
+      "computedHash": "6798b923c1bbe9b07cb8c40470ada09c377d666045caefda90d95577e16e8744"
+    },
+    "workers-best-practices": {
+      "source": "developers.cloudflare.com",
+      "sourceType": "well-known",
+      "computedHash": "420e1ad3eaeb8ed2016e6b34fff3757de6aa39899ec2bd6e9784a29c38e70f9a"
+    },
+    "wrangler": {
+      "source": "developers.cloudflare.com",
+      "sourceType": "well-known",
+      "computedHash": "a27fded44ce73b7ef69b1b52fcdf0cdde9c2b17f345b761bf11ca32d37da2220"
+    }
+  }
+}

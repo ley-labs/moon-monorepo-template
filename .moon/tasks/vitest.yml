@@ -1,0 +1,15 @@
+$schema: 'https://moonrepo.dev/schemas/tasks.json'
+
+inheritedBy:
+  file: 'vitest.config.ts'
+
+tasks:
+  test:
+    command: 'pnpm vitest run'
+    deps:
+      - "~:typecheck"
+    inputs:
+      - 'src/**/*'
+      - 'vitest.config.ts'
+      - 'tsconfig.json'
+      - '/tsconfig.options.json'

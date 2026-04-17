@@ -1,0 +1,12 @@
+$schema: 'https://moonrepo.dev/schemas/template.json'
+
+id: 'web-app'
+title: 'Web Application Template'
+description: 'A SolidJS web application using Vite and Cloudflare Pages.'
+destination: '/apps/[projectName]-app'
+
+variables:
+  projectName:
+    type: 'string'
+    prompt: 'What is the name of the project?'
+    required: true

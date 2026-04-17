@@ -1,0 +1,8 @@
+language: 'typescript'
+stack: 'unknown'
+layer: 'automation'
+tags: ['e2e']
+
+dependsOn:
+  - '{{ projectName }}-web'
+  - '{{ projectName }}-api'

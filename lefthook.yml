@@ -1,0 +1,16 @@
+pre-commit:
+  commands:
+    sync:
+      priority: 1
+      run: pnpm sync
+    format:
+      priority: 2
+      run: pnpm format {staged_files}
+    add:
+      priority: 3
+      run: git add {staged_files}
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm commitlint --edit {1}

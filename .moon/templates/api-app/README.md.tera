@@ -1,0 +1,49 @@
+# @ley-labs/{{ projectName }}-api
+
+A high-performance Hono API designed for Cloudflare Workers.
+
+## Features
+
+- **Hono**: Ultrafast web framework for the Edges.
+- **Vitest**: High-fidelity testing with `@cloudflare/vitest-pool-workers`.
+- **Wrangler**: Seamless Cloudflare Workers deployment.
+- **TypeScript**: Shared configuration via project references.
+
+## Getting Started
+
+### Development
+
+Run the development server with hot-module reloading:
+
+```bash
+moon run {{ projectName }}-api:dev
+```
+
+### Testing
+
+Run the test suite:
+
+```bash
+moon run {{ projectName }}-api:test
+```
+
+### Typechecking
+
+Verify type safety:
+
+```bash
+moon run {{ projectName }}-api:typecheck
+```
+
+### Deployment
+
+Deploy to Cloudflare Workers:
+
+```bash
+moon run {{ projectName }}-api:deploy
+```
+
+## Endpoints
+
+- `GET /`: Returns a welcome message.
+- `GET /health`: Returns a JSON status of `{"status":"ok"}`.

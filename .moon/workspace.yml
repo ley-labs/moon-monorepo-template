@@ -1,0 +1,19 @@
+projects: ["apps/*", "packages/*", "e2e/*", "tools/*"]
+
+constraints:
+  enforceLayerRelationships: true
+  tagRelationships:
+    e2e: ['web', 'api', 'client', 'server', 'shared', 'infra']
+    web: ['client', 'shared', 'infra']
+    api: ['server', 'shared', 'infra']
+    client: ['client', 'shared']
+    server: ['server', 'shared']
+    shared: ['shared']
+
+vcs:
+  defaultBranch: "main"
+  provider: "github"
+
+generator:
+  templates:
+    - "./.moon/templates"

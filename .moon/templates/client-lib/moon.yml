@@ -1,0 +1,8 @@
+project:
+  type: 'library'
+
+tags: ['client']
+
+layer: 'library'
+stack: 'frontend'
+language: 'typescript'

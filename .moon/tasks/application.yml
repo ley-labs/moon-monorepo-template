@@ -1,0 +1,14 @@
+$schema: "https://moonrepo.dev/schemas/tasks.json"
+
+inheritedBy:
+  layer: "application"
+
+tasks:
+  dev:
+    command: "pnpm portless run --force --name $project pnpm vite"
+    deps:
+      - "portless:proxy"
+    options:
+      cache: false
+      persistent: true
+      runInCI: false

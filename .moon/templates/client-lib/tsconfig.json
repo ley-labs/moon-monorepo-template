@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "composite": false,
+    "incremental": false,
+    "outDir": "../../.moon/cache/types/packages/auth-client"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,9 @@
+project:
+  type: 'application'
+
+tags: ['web']
+
+layer: 'application'
+stack: 'frontend'
+language: 'typescript'
+

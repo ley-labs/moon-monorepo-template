@@ -1,0 +1,21 @@
+$schema: "https://moonrepo.dev/schemas/tasks.json"
+
+inheritedBy:
+  file: "playwright.config.ts"
+
+tasks:
+  e2e:
+    command: "pnpm playwright test"
+    deps:
+      - "^:build"
+      - "playwright:install-browsers"
+    inputs:
+      - "src/**/*"
+      - "tests/**/*"
+      - "playwright.config.ts"
+      - "/tsconfig.json"
+    outputs:
+      - "playwright-report"
+      - "test-results"
+    options:
+      runInCI: true

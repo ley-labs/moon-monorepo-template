@@ -1,0 +1,12 @@
+$schema: 'https://moonrepo.dev/schemas/template.json'
+
+id: 'e2e-app'
+title: 'E2E Application Template'
+description: 'A Playwright E2E testing project.'
+destination: '/e2e/[projectName]-e2e'
+
+variables:
+  projectName:
+    type: 'string'
+    prompt: 'What is the name of the project?'
+    required: true

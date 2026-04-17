@@ -1,0 +1,12 @@
+$schema: 'https://moonrepo.dev/schemas/template.json'
+
+id: 'shared-lib'
+title: 'Shared Library Template'
+description: 'A shared library for client and server using Vite and Vitest.'
+destination: '/packages/[projectName]-shared'
+
+variables:
+  projectName:
+    type: 'string'
+    prompt: 'What is the name of the project?'
+    required: true

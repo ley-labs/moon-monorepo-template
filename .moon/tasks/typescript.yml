@@ -1,0 +1,15 @@
+$schema: 'https://moonrepo.dev/schemas/tasks.json'
+
+inheritedBy:
+  file: 'tsconfig.json'
+
+tasks:
+  typecheck:
+    command: 'pnpm tsc --build --pretty --verbose'
+    inputs:
+      - 'src/**/*'
+      - 'tsconfig.json'
+      - '/tsconfig.json'
+      - '/tsconfig.options.json'
+    outputs:
+      - '/.moon/cache/types/$projectSource/**/*'

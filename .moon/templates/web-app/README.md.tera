@@ -1,0 +1,53 @@
+# @ley-labs/{{ projectName }}-web
+
+A modern, reactive frontend built with SolidJS and Vite, deployed to Cloudflare Workers.
+
+## Features
+
+- **SolidJS**: Pragmatic, high-performance reactivity.
+- **Vite**: Lightning-fast build tool and dev server.
+- **Vitest**: Frontend testing with JSDOM and `@testing-library/solid`.
+- **Cloudflare Workers**: High-performance static asset hosting and compute.
+- **TypeScript**: Shared configuration via project references.
+
+## Getting Started
+
+### Development
+
+Run the development server with HMR:
+
+```bash
+moon run {{ projectName }}-web:dev
+```
+
+### Testing
+
+Run the test suite:
+
+```bash
+moon run {{ projectName }}-web:test
+```
+
+### Typechecking
+
+Verify type safety:
+
+```bash
+moon run {{ projectName }}-web:typecheck
+```
+
+### Build
+
+Build the project for production:
+
+```bash
+moon run {{ projectName }}-web:build
+```
+
+### Deployment
+
+Deploy to Cloudflare Workers:
+
+```bash
+moon run {{ projectName }}-web:deploy
+```

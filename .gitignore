@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+dist-server/
+.wrangler/
+.output/
+.vercel/
+.netlify/
+.vinxi/
+app.config.timestamp_*.js
+tsup.config.bundled_*.mjs
+*.tsbuildinfo
+
+# Moon / Task runner cache
+.moon/cache/
+.moon/docker/
+
+# Environment and secrets
+.env
+.env*.local
+.env.production
+.dev.vars
+
+# IDEs and editors
+.idea/
+.vscode/
+.project
+.classpath
+*.launch
+.settings/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+
+# Temp
+gitignore

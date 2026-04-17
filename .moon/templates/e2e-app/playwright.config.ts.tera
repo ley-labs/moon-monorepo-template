@@ -1,0 +1,34 @@
+import { defineConfig, devices } from '@playwright/test';
+
+export default defineConfig({
+  testDir: './tests',
+  fullyParallel: true,
+  forbidOnly: !!process.env.CI,
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 1 : undefined,
+  reporter: 'html',
+  use: {
+    baseURL: 'http://{{ projectName }}-web.localhost',
+    trace: 'on-first-retry',
+  },
+  projects: [
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
+  ],
+  webServer: [
+    {
+      command: 'pnpm moon run {{ projectName }}-web:dev',
+      url: 'http://{{ projectName }}-web.localhost',
+      reuseExistingServer: !process.env.CI,
+      gracefulShutdown: { signal: 'SIGTERM', timeout: 2000 },
+    },
+    {
+      command: 'pnpm moon run {{ projectName }}-api:dev',
+      url: 'http://{{ projectName }}-api.localhost',
+      reuseExistingServer: !process.env.CI,
+      gracefulShutdown: { signal: 'SIGTERM', timeout: 2000 },
+    },
+  ],
+});

@@ -1,11 +1,32 @@
 {
-  "name": "@ley-labs/platform",
+  "name": "moon-monorepo-template",
   "version": "0.0.0",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "build": "moon run :build --affected --summary",
+    "format": "biome format --write --files-ignore-unknown=true --no-errors-on-unmatched",
+    "e2e": "moon run :e2e --affected --summary --concurrency 1",
+    "lint": "moon run :lint --affected --summary",
+    "sync": "moon sync",
+    "test": "moon run :test --affected --summary",
+    "typecheck": "moon run :typecheck --affected --summary"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.33.0",
-  "type": "module"
+  "engines": {
+    "node": ">=24.14.0",
+    "pnpm": ">=10.33.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@moonrepo/cli": "catalog:",
+    "@playwright/test": "catalog:",
+    "portless": "catalog:",
+    "lefthook": "catalog:"
+  }
 }
