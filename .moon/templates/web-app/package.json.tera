@@ -3,6 +3,12 @@
   "version": "0.0.0",
   "description": "",
   "type": "module",
+  "exports": {
+    ".": {
+      "development": "./src/index.tsx",
+      "default": "./src/index.tsx"
+    }
+  },
   "scripts": {},
   "license": "MIT",
   "devDependencies": {

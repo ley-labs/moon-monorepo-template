@@ -1,21 +1,17 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "emitDeclarationOnly": true,
-    "incremental": true,
-    "noEmitOnError": true,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
+    "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
+    "customConditions": ["development"],
     "strict": true,
-    "target": "esnext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "useDefineForClassFields": true
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "noEmit": true
   }
 }

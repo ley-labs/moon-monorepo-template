@@ -2,6 +2,12 @@
   "name": "@ley-labs/{{ projectName }}-api",
   "version": "0.0.0",
   "type": "module",
+  "exports": {
+    ".": {
+      "development": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
   "scripts": {},
   "dependencies": {
     "hono": "catalog:"

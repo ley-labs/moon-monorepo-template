@@ -1,9 +1,6 @@
 {
   "extends": "../../tsconfig.options.json",
-  "compilerOptions": {
-    "noEmit": false,
-    "emitDeclarationOnly": true
-  },
+  "compilerOptions": {},
   "include": ["src/**/*"],
   "exclude": ["dist", "node_modules"]
 }

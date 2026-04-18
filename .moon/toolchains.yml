@@ -9,6 +9,6 @@ typescript:
   projectConfigFileName: "tsconfig.json"
   rootConfigFileName: "tsconfig.json"
   rootOptionsConfigFileName: "tsconfig.options.json"
-  syncProjectReferences: true
-  routeOutDirToCache: true
-  pruneProjectReferences: true
+  syncProjectReferences: false
+  routeOutDirToCache: false
+  pruneProjectReferences: false

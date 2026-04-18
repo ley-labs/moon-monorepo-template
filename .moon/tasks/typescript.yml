@@ -5,11 +5,9 @@ inheritedBy:
 
 tasks:
   typecheck:
-    command: 'pnpm tsc --build --pretty --verbose'
+    command: 'pnpm tsc --noEmit --pretty'
     inputs:
       - 'src/**/*'
       - 'tsconfig.json'
       - '/tsconfig.json'
       - '/tsconfig.options.json'
-    outputs:
-      - '/.moon/cache/types/$projectSource/**/*'
