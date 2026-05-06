@@ -1,11 +1,13 @@
-project:
-  type: 'infrastructure'
+# yaml-language-server: $schema=../../.moon/cache/schemas/project.json
 
-tags: ['infra']
+project:
+  type: "infrastructure"
+
+tags: ["infra"]
 
 tasks:
   proxy:
-    command: "pnpm portless proxy start --no-tls"
+    command: "bun portless proxy start -p 4665 --no-tls"
     options:
       cache: false
       runInCI: false

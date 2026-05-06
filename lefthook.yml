@@ -1,11 +1,13 @@
+# yaml-language-server: $schema=./node_modules/lefthook/schema.json
+
 pre-commit:
   commands:
     sync:
       priority: 1
-      run: pnpm sync
+      run: moon sync
     format:
       priority: 2
-      run: pnpm format {staged_files}
+      run: bun format {staged_files}
     add:
       priority: 3
       run: git add {staged_files}
@@ -13,4 +15,4 @@ pre-commit:
 commit-msg:
   commands:
     commitlint:
-      run: pnpm commitlint --edit {1}
+      run: bun commitlint --edit {1}

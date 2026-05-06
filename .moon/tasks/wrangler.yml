@@ -1,13 +1,13 @@
-$schema: 'https://moonrepo.dev/schemas/tasks.json'
+# yaml-language-server: $schema=../cache/schemas/tasks.json
 
 inheritedBy:
-  file: 'wrangler.json'
+  file: "wrangler.json"
 
 tasks:
   deploy:
-    command: 'pnpm wrangler deploy'
+    command: "bun wrangler deploy"
     deps:
-      - '~:build'
+      - "~:build"
     inputs:
-      - 'src/**/*'
-      - 'wrangler.json'
+      - "src/**/*"
+      - "wrangler.json"

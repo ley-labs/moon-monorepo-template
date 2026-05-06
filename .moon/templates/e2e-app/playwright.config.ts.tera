@@ -19,13 +19,13 @@ export default defineConfig({
   ],
   webServer: [
     {
-      command: 'pnpm moon run {{ projectName }}-web:dev',
+      command: 'moon run {{ projectName }}-web:dev',
       url: 'http://{{ projectName }}-web.localhost',
       reuseExistingServer: !process.env.CI,
       gracefulShutdown: { signal: 'SIGTERM', timeout: 2000 },
     },
     {
-      command: 'pnpm moon run {{ projectName }}-api:dev',
+      command: 'moon run {{ projectName }}-api:dev',
       url: 'http://{{ projectName }}-api.localhost',
       reuseExistingServer: !process.env.CI,
       gracefulShutdown: { signal: 'SIGTERM', timeout: 2000 },

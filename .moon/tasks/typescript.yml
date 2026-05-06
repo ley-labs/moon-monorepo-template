@@ -1,13 +1,13 @@
-$schema: 'https://moonrepo.dev/schemas/tasks.json'
+# yaml-language-server: $schema=../cache/schemas/tasks.json
 
 inheritedBy:
-  file: 'tsconfig.json'
+  file: "tsconfig.json"
 
 tasks:
   typecheck:
-    command: 'pnpm tsc --noEmit --pretty'
+    command: "bun tsc --pretty"
     inputs:
-      - 'src/**/*'
-      - 'tsconfig.json'
-      - '/tsconfig.json'
-      - '/tsconfig.options.json'
+      - "src/**/*"
+      - "tsconfig.json"
+      - "/tsconfig.json"
+      - "/tsconfig.options.json"

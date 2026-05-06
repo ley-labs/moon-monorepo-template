@@ -15,12 +15,12 @@ Shared library for client and server.
 
 From the workspace root:
 ```bash
-pnpm add @ley-labs/{{ projectName }}-shared --workspace --filter <target-app>
+bun add @ley-labs/{{ projectName }}-shared --workspace --filter <target-app>
 ```
 
 Or, from the target app directory:
 ```bash
-pnpm add @ley-labs/{{ projectName }}-shared --workspace
+bun add @ley-labs/{{ projectName }}-shared --workspace
 ```
 
 ### Import

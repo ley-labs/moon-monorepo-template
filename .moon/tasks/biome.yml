@@ -1,12 +1,12 @@
-$schema: 'https://moonrepo.dev/schemas/tasks.json'
+# yaml-language-server: $schema=../cache/schemas/tasks.json
 
 inheritedBy:
-  file: 'biome.json'
+  file: "biome.json"
 
 tasks:
   lint:
-    command: 'pnpm biome check --no-errors-on-unmatched --files-ignore-unknown=true .'
+    command: "bun biome lint --no-errors-on-unmatched --files-ignore-unknown=true ."
     inputs:
-      - 'src/**/*'
-      - 'biome.json'
-      - '/biome.json'
+      - "src/**/*"
+      - "biome.json"
+      - "/biome.json"

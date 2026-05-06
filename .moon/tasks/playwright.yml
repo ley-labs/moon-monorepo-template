@@ -1,11 +1,11 @@
-$schema: "https://moonrepo.dev/schemas/tasks.json"
+# yaml-language-server: $schema=../cache/schemas/tasks.json
 
 inheritedBy:
   file: "playwright.config.ts"
 
 tasks:
   e2e:
-    command: "pnpm playwright test"
+    command: "bun playwright test"
     deps:
       - "^:build"
       - "playwright:install-browsers"

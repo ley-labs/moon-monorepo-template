@@ -1,4 +1,4 @@
-$schema: "https://moonrepo.dev/schemas/project.json"
+# yaml-language-server: $schema=../../.moon/cache/schemas/project.json
 
 project:
   type: "tool"
@@ -7,10 +7,10 @@ tags: ["infra", "playwright"]
 
 tasks:
   install-browsers:
-    command: "pnpm playwright install --with-deps"
+    command: "bun playwright install --with-deps"
     options:
       cache: false
       runInCI: true
     inputs:
       - "/package.json"
-      - "/pnpm-lock.yaml"
+      - "/bun.lock"
