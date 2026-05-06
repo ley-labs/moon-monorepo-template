@@ -17,7 +17,7 @@ Comprehensive end-to-end test suite for the `{{ projectName }}` project stack us
 Ensure Playwright browsers are installed:
 
 ```bash
-pnpm playwright install
+bun playwright install
 ```
 
 ### Running Tests
@@ -33,7 +33,7 @@ moon run {{ projectName }}-e2e:e2e
 Run tests in Playwright UI mode for interactive debugging:
 
 ```bash
-pnpm -C e2e/{{ projectName }}-e2e playwright test --ui
+bun -C e2e/{{ projectName }}-e2e playwright test --ui
 ```
 
 ### Linting

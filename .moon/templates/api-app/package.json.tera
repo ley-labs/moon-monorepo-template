@@ -3,18 +3,17 @@
   "version": "0.0.0",
   "type": "module",
   "exports": {
-    ".": {
-      "development": "./src/index.ts",
-      "default": "./src/index.ts"
-    }
+    ".": "./src/index.ts"
   },
   "scripts": {},
   "dependencies": {
     "hono": "catalog:"
   },
   "devDependencies": {
+    "@biomejs/biome": "catalog:",
     "@cloudflare/vite-plugin": "catalog:",
     "@cloudflare/vitest-pool-workers": "catalog:",
+    "typescript": "catalog:",
     "vite": "catalog:",
     "vitest": "catalog:",
     "wrangler": "catalog:"

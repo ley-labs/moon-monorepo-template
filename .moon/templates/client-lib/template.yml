@@ -1,4 +1,4 @@
-$schema: 'https://moonrepo.dev/schemas/template.json'
+# yaml-language-server: $schema=../../../.moon/cache/schemas/template.json
 
 id: 'client-lib'
 title: 'Client Library Template'

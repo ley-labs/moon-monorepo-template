@@ -2,6 +2,7 @@
 
 ## Commands
 
+- **Setup**: `proto use && bun install` (initializes toolchain and deps)
 - **Build**: `moon run :build --affected` (builds changed projects)
 - **Test**: `moon run :test --affected` (runs vitest)
 - **Lint**: `moon run :lint --affected` (uses Biome)
@@ -11,7 +12,7 @@
 
 ## Tech Stack
 
-- **Monorepo**: moonrepo + pnpm workspaces
+- **Monorepo**: moonrepo + bun workspaces
 - **Frontend**: Solid.js (web apps/clients)
 - **Backend**: Hono (Cloudflare Workers via Wrangler)
 - **Tooling**: Biome (lint/format), Vite (build), Vitest (test)
@@ -33,10 +34,10 @@
   - `biome.json` -> `lint`
   - `vite.config.ts` -> `build`
 - **Imports**: Use workspace aliases `@ley-labs/auth-shared`, etc.
-- **Scaffolding**: Use `moon init --template <type>` to create new projects.
+- **Scaffolding**: Use `moon generate <template>` to create new projects.
 
 ## Gotchas
 
-- **Biome**: Does both linting and formatting. Run `pnpm format` for auto-fixes.
+- **Biome**: Does both linting and formatting. Run `bun format` for auto-fixes.
 - **Moon affected**: Local development often uses `--affected` to save time. For single project: `moon run <project>:<task>`.
 - **Cloudflare**: API apps are Hono-based Workers. Web apps are static/Solid.js also deployed via Wrangler.

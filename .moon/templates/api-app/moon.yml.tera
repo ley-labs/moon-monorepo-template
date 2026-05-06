@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=../../.moon/cache/schemas/project.json
+
 project:
   type: 'application'
 
@@ -6,4 +8,3 @@ tags: ['api']
 layer: 'application'
 stack: 'backend'
 language: 'typescript'
-

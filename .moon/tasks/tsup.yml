@@ -1,11 +1,11 @@
-$schema: "https://moonrepo.dev/schemas/tasks.json"
+# yaml-language-server: $schema=../cache/schemas/tasks.json
 
 inheritedBy:
   file: "tsup.config.ts"
 
 tasks:
   build:
-    command: "pnpm tsup"
+    command: "bun tsup"
     deps:
       - "~:typecheck"
       - "~:lint"

@@ -14,7 +14,4 @@ export default defineConfig({
     environment: 'jsdom',
     transformMode: { web: [/\.[jt]sx$/] },
   },
-  resolve: {
-    conditions: ['browser', 'development'],
-  },
 });

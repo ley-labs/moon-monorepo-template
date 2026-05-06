@@ -1,14 +1,19 @@
-node:
-  version: "24.14.0"
-pnpm:
-  version: "10.33.0"
+# yaml-language-server: $schema=./cache/schemas/toolchains.json
+
+node: {}
+
+bun: {}
+
 javascript:
-  packageManager: "pnpm"
+  packageManager: "bun"
+  syncPackageManagerField: true
   syncProjectWorkspaceDependencies: true
+
 typescript:
   projectConfigFileName: "tsconfig.json"
   rootConfigFileName: "tsconfig.json"
   rootOptionsConfigFileName: "tsconfig.options.json"
-  syncProjectReferences: false
+  syncProjectReferences: true
+  syncProjectReferencesToPaths: false
   routeOutDirToCache: false
-  pruneProjectReferences: false
+  pruneProjectReferences: true

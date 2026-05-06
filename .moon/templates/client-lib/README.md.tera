@@ -5,7 +5,7 @@ A SolidJS client-side library.
 ## Getting Started
 
 ```bash
-pnpm install
+bun install
 ```
 
 ## Features

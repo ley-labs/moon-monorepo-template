@@ -12,7 +12,7 @@ Portless provides stable, named `.localhost` URLs for local development (e.g., `
 
 Starts the Portless proxy in the background.
 
-- **Command**: `pnpm portless proxy start --no-tls`
+- **Command**: `bun portless proxy start -p 4665 --no-tls`
 - **Mode**: HTTP (no-TLS) to avoid `sudo` requirements and certificate warnings.
 - **Inheritance**: This task is a singleton dependency for all application `dev` tasks.
 
@@ -23,7 +23,7 @@ The proxy starts automatically when you run any `dev` task in the workspace.
 To manually manage the proxy:
 
 ```bash
-pnpm moon run portless:proxy
-pnpm portless proxy stop
-pnpm portless list
+moon run portless:proxy
+bun portless proxy stop
+bun portless list
 ```

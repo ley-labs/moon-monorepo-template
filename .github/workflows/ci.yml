@@ -19,27 +19,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Moon
+        uses: moonrepo/setup-toolchain@v0
         with:
-          node-version-file: "package.json"
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Cache Moon Task Results
-        uses: actions/cache@v4
-        with:
-          path: .moon/cache
-          key: moon-cache-${{ runner.os }}-${{ github.ref_name }}-${{ github.sha }}
-          restore-keys: |
-            moon-cache-${{ runner.os }}-${{ github.ref_name }}-
-            moon-cache-${{ runner.os }}-
+          auto-install: true
+          auto-setup: true
+          cache: true
+          cache-base: main
 
       - name: Run CI
-        run: pnpm moon ci --summary
-
+        run: moon ci --summary

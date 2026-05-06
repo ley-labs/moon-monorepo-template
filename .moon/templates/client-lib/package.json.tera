@@ -6,32 +6,24 @@
     "dist"
   ],
   "exports": {
-    ".": {
-      "development": {
-        "types": "./src/index.tsx",
-        "import": "./src/index.tsx"
-      },
-      "default": {
-        "types": "./dist/index.d.ts",
-        "import": "./dist/index.js"
-      }
-    }
+    ".": "./src/index.tsx"
   },
   "scripts": {},
   "peerDependencies": {
     "solid-js": "^1.9.0"
   },
   "devDependencies": {
-    "solid-js": "catalog:",
-    "vite": "catalog:",
-    "vite-plugin-solid": "catalog:",
-    "vitest": "catalog:",
-    "typescript": "catalog:",
-    "tsup": "catalog:",
-    "tsup-preset-solid": "catalog:",
+    "@biomejs/biome": "catalog:",
+    "@solidjs/testing-library": "catalog:",
     "@testing-library/jest-dom": "catalog:",
     "@testing-library/user-event": "catalog:",
-    "@solidjs/testing-library": "catalog:",
-    "jsdom": "catalog:"
+    "jsdom": "catalog:",
+    "solid-js": "catalog:",
+    "tsup": "catalog:",
+    "tsup-preset-solid": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plugin-solid": "catalog:",
+    "vitest": "catalog:"
   }
 }

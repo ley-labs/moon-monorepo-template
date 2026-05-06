@@ -4,6 +4,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [cloudflare()],
   server: {
-    port: 4000,
+    port: Number(process.env.PORT) || 4000,
+    host: '127.0.0.1',
   },
 });

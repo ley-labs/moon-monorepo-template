@@ -14,12 +14,25 @@
     "debug-task": {
       "source": "moonrepo/moon",
       "sourceType": "github",
+      "skillPath": "skills/debug-task/SKILL.md",
       "computedHash": "7393becbdda183fd0f809222a44e5c3df104b4da23be940c97bc8b75bb57d629"
     },
     "formisch": {
       "source": "open-circle/agent-skills",
       "sourceType": "github",
       "computedHash": "3920325909e35e888d752fd756c31e9b26b2fc66ba0bdb456f67ad8101d87485"
+    },
+    "improve-code-quality": {
+      "source": "moonrepo/moon",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/improve-code-quality/SKILL.md",
+      "computedHash": "4e1b5591f6b141dc4e35df9e58915c6c35d532cfb2790af589fcf2b78b960d4b"
+    },
+    "portless": {
+      "source": "vercel-labs/portless",
+      "sourceType": "github",
+      "skillPath": "skills/portless/SKILL.md",
+      "computedHash": "320e0a6173b550a4d96df56b2cc4d52f3979debc6b33d39b2d8c49e93115370b"
     },
     "valibot": {
       "source": "open-circle/agent-skills",

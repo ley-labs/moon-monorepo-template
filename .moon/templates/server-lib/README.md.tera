@@ -4,10 +4,10 @@ Server-only library for authentication and authorization.
 
 ## Scripts
 
-- `pnpm moon run {{ projectName }}-server:build` - Build for production.
-- `pnpm moon run {{ projectName }}-server:test` - Run tests.
-- `pnpm moon run {{ projectName }}-server:lint` - Check for linting errors.
-- `pnpm moon run {{ projectName }}-server:typecheck` - Run TypeScript type checking.
+- `moon run {{ projectName }}-server:build` - Build for production.
+- `moon run {{ projectName }}-server:test` - Run tests.
+- `moon run {{ projectName }}-server:lint` - Check for linting errors.
+- `moon run {{ projectName }}-server:typecheck` - Run TypeScript type checking.
 
 ## Usage
 
@@ -15,7 +15,7 @@ Server-only library for authentication and authorization.
 
 From the workspace root:
 ```bash
-pnpm add @ley-labs/{{ projectName }}-server --workspace --filter <target-app>
+bun add @ley-labs/{{ projectName }}-server --workspace --filter <target-app>
 ```
 
 ### Import

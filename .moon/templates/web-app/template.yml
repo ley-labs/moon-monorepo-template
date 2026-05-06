@@ -1,9 +1,9 @@
-$schema: 'https://moonrepo.dev/schemas/template.json'
+# yaml-language-server: $schema=../../../.moon/cache/schemas/template.json
 
 id: 'web-app'
 title: 'Web Application Template'
 description: 'A SolidJS web application using Vite and Cloudflare Pages.'
-destination: '/apps/[projectName]-app'
+destination: '/apps/[projectName]-web'
 
 variables:
   projectName:

@@ -1,11 +1,11 @@
-$schema: "https://moonrepo.dev/schemas/tasks.json"
+# yaml-language-server: $schema=../cache/schemas/tasks.json
 
 inheritedBy:
   layer: "application"
 
 tasks:
   dev:
-    command: "pnpm portless run --force --name $project pnpm vite"
+    command: "bun portless run --force --name $project bun vite"
     deps:
       - "portless:proxy"
     options:

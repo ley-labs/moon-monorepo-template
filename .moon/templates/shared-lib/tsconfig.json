@@ -1,6 +1,15 @@
 {
   "extends": "../../tsconfig.options.json",
-  "compilerOptions": {},
+  "compilerOptions": {
+    "composite": true,
+    "incremental": true,
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "tsBuildInfoFile": "../../.moon/cache/types/packages/{{ projectName }}-shared/tsconfig.tsbuildinfo",
+    "outDir": "../../.moon/cache/types/packages/{{ projectName }}-shared",
+    "rootDir": "src"
+  },
   "include": ["src/**/*"],
   "exclude": ["dist", "node_modules"]
 }

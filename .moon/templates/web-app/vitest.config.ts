@@ -2,20 +2,16 @@ import solidPlugin from 'vite-plugin-solid';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  plugins: [solidPlugin()],
+  plugins: [
+    solidPlugin({
+      hot: false,
+      solid: { generate: 'dom' },
+    }),
+  ],
   test: {
-    environment: 'jsdom',
-    setupFiles: ['src/setup-tests.ts'],
+    watch: false,
     isolate: false,
-    deps: {
-      optimizer: {
-        web: {
-          enabled: true,
-        },
-      },
-    },
-  },
-  resolve: {
-    conditions: ['development', 'browser'],
+    environment: 'jsdom',
+    transformMode: { web: [/\.[jt]sx$/] },
   },
 });

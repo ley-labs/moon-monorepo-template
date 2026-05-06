@@ -1,21 +1,21 @@
-$schema: "https://moonrepo.dev/schemas/tasks.json"
+# yaml-language-server: $schema=../cache/schemas/tasks.json
 
 inheritedBy:
   file: "vite.config.ts"
 
 tasks:
   build:
-    command: "pnpm vite build"
+    command: "bun vite build"
     deps:
       - "~:typecheck"
       - "~:lint"
     inputs:
-      - 'src/**/*'
-      - 'vite.config.ts'
-      - 'tsconfig.json'
-      - file: 'index.html'
+      - "src/**/*"
+      - "vite.config.ts"
+      - "tsconfig.json"
+      - file: "index.html"
         optional: true
-      - file: 'wrangler.json'
+      - file: "wrangler.json"
         optional: true
     outputs:
       - "dist"
